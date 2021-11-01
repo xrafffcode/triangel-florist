@@ -1,0 +1,1432 @@
+                            @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+                            * {
+                                font-family: 'Poppins', sans-serif;
+                            }
+                            
+                            * {
+                                margin: 0;
+                                padding: 0;
+                                box-sizing: border-box;
+                            }
+                            /* Running Text */
+                            
+                            div.runtext-container>div>marquee {
+                                width: 100%;
+                                line-height: 40px;
+                            }
+                            
+                            .scroll-hp {
+                                font-family: Arial, Helvetica, sans-serif;
+                                margin-left: auto;
+                                margin-right: auto;
+                                width: 300px;
+                                margin-top: 100px;
+                                width: 100%;
+                                display: block;
+                                padding: 30px;
+                            }
+                            
+                            div.runtext-container>div>marquee>p {
+                                display: none
+                            }
+                            
+                            .runtext-container {
+                                background-color: #FEC601;
+                                overflow-x: hidden;
+                                overflow-y: visible;
+                                padding: 0 3px 0 3px;
+                            }
+                            
+                            .main-runtext {
+                                margin: 0 auto;
+                                overflow: visible;
+                                position: relative;
+                                height: 40px;
+                            }
+                            
+                            .runtext-container .holder {
+                                position: relative;
+                                overflow: visible;
+                                display: inline;
+                                float: left;
+                            }
+                            
+                            .runtext-container .holder .text-container {
+                                display: inline;
+                            }
+                            
+                            .runtext-container .holder a {
+                                text-decoration: none;
+                                color: #000;
+                                text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+                                line-height: -0.5em;
+                                font-size: 16px;
+                                font-family: 'source sans pro';
+                            }
+                            
+                            .runtext-container .holder a>strong {
+                                font-weight: bold
+                            }
+                            
+                            .runtext-container .holder a:hover {
+                                text-decoration: none;
+                                color: #6600ff;
+                            }
+                            /* Header */
+                            
+                            li {
+                                list-style: none;
+                            }
+                            
+                            a {
+                                text-decoration: none;
+                            }
+                            
+                            .header {
+                                border-bottom: 1px solid #E2E8F0;
+                                z-index: 3;
+                                margin-top: -5;
+                                background: white;
+                            }
+                            
+                            .navbar {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 1rem 1.5rem;
+                                z-index: 1;
+                            }
+                            
+                            .hamburger {
+                                display: none;
+                            }
+                            
+                            .bar {
+                                display: block;
+                                width: 25px;
+                                height: 3px;
+                                margin: 5px auto;
+                                -webkit-transition: all 0.3s ease-in-out;
+                                transition: all 0.3s ease-in-out;
+                                background-color: #101010;
+                            }
+                            
+                            .nav-menu {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                            }
+                            
+                            .nav-item {
+                                margin-left: 5rem;
+                            }
+                            
+                            .nav-link {
+                                font-size: 15px;
+                                font-weight: 600;
+                                color: #475569;
+                                font-family: 'Poppins', sans-serif;
+                            }
+                            
+                            .nav-link:hover {
+                                color: #482ff7;
+                            }
+                            
+                            .nav-logo img {
+                                font-size: 2.1rem;
+                                font-weight: 500;
+                                color: #482ff7;
+                                width: 100px;
+                                margin-top: -15px;
+                            }
+                            
+                            section {
+                                position: relative;
+                                width: 100%;
+                                height: 100vh;
+                                background: #3586ff;
+                                overflow: hidden;
+                            }
+                            
+                            .nav-menu p {
+                                color: white;
+                                margin-top: 20px;
+                                display: none;
+                            }
+                            /*Responsive*/
+                            /*Responsive*/
+                            
+                            @media only screen and (max-width: 768px) {
+                                .nav-menu {
+                                    position: fixed;
+                                    left: -100%;
+                                    top: 120px;
+                                    flex-direction: column;
+                                    color: white;
+                                    background-color: rgb(29, 27, 27);
+                                    width: 100%;
+                                    border-radius: 10px;
+                                    text-align: center;
+                                    transition: 0.3s;
+                                    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+                                    z-index: 2;
+                                    height: 450px;
+                                    display: none;
+                                }
+                                .nav-menu p {
+                                    color: white;
+                                    display: block;
+                                    margin-top: 20px;
+                                }
+                                .navbar {
+                                    display: none;
+                                }
+                                .nav-link {
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    background-color: white;
+                                    color: #378aff;
+                                    font-family: 'Poppins', sans-serif;
+                                }
+                                .nav-menu.active {
+                                    left: 0;
+                                }
+                                .nav-item {
+                                    margin: 2.5rem 0;
+                                }
+                                .hamburger {
+                                    display: block;
+                                    cursor: pointer;
+                                }
+                                .hamburger.active .bar:nth-child(2) {
+                                    opacity: 0;
+                                }
+                                .hamburger.active .bar:nth-child(1) {
+                                    transform: translateY(8px) rotate(45deg);
+                                }
+                                .hamburger.active .bar:nth-child(3) {
+                                    transform: translateY(-8px) rotate(-45deg);
+                                }
+                                .nav-item {
+                                    color: crimson;
+                                }
+                            }
+                            /* FLoat Whatsapp */
+                            
+                            .float {
+                                position: fixed;
+                                width: 200px;
+                                height: 60px;
+                                bottom: 40px;
+                                right: 40px;
+                                padding: 18px;
+                                background-color: #0C9;
+                                color: #FFF;
+                                border-radius: 50px;
+                                text-align: center;
+                                box-shadow: 2px 2px 3px #999;
+                                z-index: 1;
+                            }
+                            
+                            .float:hover {
+                                background: #02B186;
+                            }
+                            
+                            .my-float {
+                                margin-top: 22px;
+                            }
+                            
+                            .float-hp {
+                                position: fixed;
+                                width: 60px;
+                                height: 60px;
+                                bottom: 40px;
+                                right: 40px;
+                                padding: 13px;
+                                font-size: 30px;
+                                background-color: #0C9;
+                                color: #FFF;
+                                border-radius: 50px;
+                                text-align: center;
+                                box-shadow: 2px 2px 3px #999;
+                                visibility: hidden;
+                            }
+                            
+                            @media only screen and (max-width: 768px) {
+                                .float {
+                                    position: fixed;
+                                    width: 60px;
+                                    height: 60px;
+                                    bottom: 40px;
+                                    right: 40px;
+                                    padding: 8px;
+                                    font-size: 12px;
+                                    background-color: #0C9;
+                                    color: #FFF;
+                                    border-radius: 50px;
+                                    text-align: center;
+                                    box-shadow: 2px 2px 3px #999;
+                                    display: none;
+                                }
+                                .float-hp {
+                                    position: fixed;
+                                    width: 90%;
+                                    height: 50px;
+                                    bottom: 40px;
+                                    right: 21px;
+                                    padding: 21px;
+                                    padding-left: 40px;
+                                    font-size: 14px;
+                                    background-color: #0C9;
+                                    color: #FFF;
+                                    border-radius: 50px;
+                                    text-align: left;
+                                    box-shadow: 2px 2px 3px #999;
+                                    visibility: visible;
+                                    z-index: 1;
+                                }
+                                .float-hp .fa-whatsapp {
+                                    margin-top: -10px;
+                                    font-size: 30px;
+                                }
+                                .float-hp p {
+                                    margin-top: -27px;
+                                    margin-left: 37px;
+                                }
+                            }
+                            /* Iklan */
+                            /* Slideshow container */
+                            
+                            .slideshow-container {
+                                max-width: 1000px;
+                                position: relative;
+                                margin: auto;
+                                z-index: -1;
+                            }
+                            /* Caption text */
+                            
+                            .text {
+                                color: #f2f2f2;
+                                font-size: 15px;
+                                padding: 8px 12px;
+                                position: absolute;
+                                bottom: 8px;
+                                width: 100%;
+                                text-align: center;
+                            }
+                            /* Number text (1/3 etc) */
+                            
+                            .numbertext {
+                                color: #f2f2f2;
+                                font-size: 12px;
+                                padding: 8px 12px;
+                                position: absolute;
+                                top: 0;
+                            }
+                            /* The dots/bullets/indicators */
+                            
+                            .dot {
+                                height: 0px;
+                                width: 0px;
+                                margin: 0 2px;
+                                background-color: #bbb;
+                                border-radius: 50%;
+                                display: inline-block;
+                                transition: background-color 0.6s ease;
+                            }
+                            
+                            .activedot {
+                                background-color: rgb(0, 0, 0);
+                            }
+                            /* Fading animation */
+                            
+                            .fade {
+                                -webkit-animation-name: fade;
+                                -webkit-animation-duration: 1.5s;
+                                animation-name: fade;
+                                animation-duration: 1.5s;
+                            }
+                            
+                            @-webkit-keyframes fade {
+                                from {
+                                    opacity: .4
+                                }
+                                to {
+                                    opacity: 1
+                                }
+                            }
+                            
+                            @keyframes fade {
+                                from {
+                                    opacity: .4
+                                }
+                                to {
+                                    opacity: 1
+                                }
+                            }
+                            /* On smaller screens, decrease text size */
+                            
+                            @media only screen and (max-width: 300px) {
+                                .text {
+                                    font-size: 11px
+                                }
+                            }
+                            
+                            .responsive {
+                                display: none;
+                            }
+                            
+                            .payment-hp {
+                                display: none;
+                            }
+                            /* Kategory */
+                            
+                            .category {
+                                width: 100%;
+                                margin-top: 10px;
+                                padding: 0;
+                                height: 250px;
+                            }
+                            
+                            .category h1 {
+                                color: #47A2FF;
+                                margin-left: 150px;
+                            }
+                            
+                            .category p {
+                                margin-left: 150px;
+                            }
+                            
+                            .category .square:hover {
+                                color: #47A2FF;
+                            }
+                            
+                            .scrolling-wrapper {
+                                overflow-x: scroll;
+                                overflow-y: hidden;
+                                white-space: nowrap;
+                                margin-left: 10px;
+                                align-items: center;
+                                margin-top: 20px;
+                                -ms-overflow-style: none;
+                                /* IE and Edge */
+                                scrollbar-width: none;
+                                /* Firefox */
+                                text-align: center;
+                            }
+                            
+                            .scrolling-wrapper::-webkit-scrollbar {
+                                display: none;
+                            }
+                            
+                            .card {
+                                display: inline-block;
+                            }
+                            
+                            .content {
+                                padding: 16px;
+                            }
+                            
+                            .sticky {
+                                position: fixed;
+                                top: 0;
+                                width: 100%;
+                            }
+                            
+                            .sticky+.content {
+                                padding-top: 102px;
+                            }
+                            
+                            .square {
+                                margin: 20px;
+                                width: 78px;
+                                height: 76px;
+                                background-color: #D2E8FF;
+                                border-radius: 8px;
+                                display: inline-block;
+                            }
+                            
+                            .scrolling-wrapper img {
+                                width: 64px;
+                                height: 63px;
+                                text-align: center;
+                            }
+                            
+                            .scrolling-wrapper h2 {
+                                font-size: 12px;
+                                text-align: center;
+                                margin-top: 18px;
+                                font-weight: normal;
+                            }
+                            
+                            .scrolling-wrapper a {
+                                color: black;
+                            }
+                            
+                            .scrolling-wrapper-hp {
+                                overflow-x: scroll;
+                                overflow-y: hidden;
+                                white-space: nowrap;
+                                margin-left: 10px;
+                                align-items: center;
+                                margin-top: 210px;
+                                -ms-overflow-style: none;
+                                /* IE and Edge */
+                                scrollbar-width: none;
+                                /* Firefox */
+                                margin-left: 20%;
+                                visibility: hidden;
+                            }
+                            
+                            @media only screen and (max-width: 768px) {
+                                .category h1 {
+                                    color: #47A2FF;
+                                    margin-left: 15px;
+                                    font-size: 20px;
+                                }
+                                .category p {
+                                    margin-left: 15px;
+                                }
+                                .category {
+                                    width: 100%;
+                                    margin-top: -30px;
+                                    padding: 0;
+                                    height: 220px;
+                                }
+                                .scrolling-wrapper {
+                                    overflow-x: scroll;
+                                    overflow-y: hidden;
+                                    white-space: nowrap;
+                                    align-items: center;
+                                    margin-top: 20px;
+                                    -ms-overflow-style: none;
+                                    /* IE and Edge */
+                                    scrollbar-width: none;
+                                    /* Firefox */
+                                    display: none;
+                                }
+                                .scrolling-wrapper-hp {
+                                    text-align: center;
+                                    overflow-x: scroll;
+                                    overflow-y: hidden;
+                                    white-space: nowrap;
+                                    align-items: center;
+                                    margin-top: 20px;
+                                    -ms-overflow-style: none;
+                                    /* IE and Edge */
+                                    scrollbar-width: none;
+                                    /* Firefox */
+                                    margin-left: 0px;
+                                    visibility: visible;
+                                }
+                                .scrolling-wrapper-hp::-webkit-scrollbar {
+                                    display: none;
+                                }
+                                .card {
+                                    display: inline-block;
+                                }
+                                .sticky {
+                                    position: fixed;
+                                    top: 0;
+                                    width: 100%;
+                                }
+                                .sticky+.header {
+                                    padding-top: 102px;
+                                    z-index: 4;
+                                }
+                                .square {
+                                    margin: 12px;
+                                    width: 58px;
+                                    height: 56px;
+                                    background-color: #D2E8FF;
+                                    border-radius: 8px;
+                                    display: inline-block;
+                                }
+                                .scrolling-wrapper-hp img {
+                                    width: 54px;
+                                    height: 53px;
+                                    text-align: center;
+                                }
+                                .scrolling-wrapper-hp h2 {
+                                    font-size: 12px;
+                                    text-align: center;
+                                    margin-top: 10px;
+                                    font-weight: normal;
+                                }
+                                .scrolling-wrapper-hp a {
+                                    color: black;
+                                }
+                                .category .square:active {
+                                    color: #47A2FF;
+                                }
+                            }
+                            /* Promo */
+                            
+                            .promo {
+                                margin-top: 40px;
+                                padding: 0;
+                                height: 600px;
+                                margin-left: 150px;
+                                z-index: -1;
+                            }
+                            
+                            .promo h1 {
+                                color: #47A2FF;
+                            }
+                            
+                            .card-promo {
+                                position: absolute;
+                                width: 481px;
+                                height: 196px;
+                                border: 1px solid #DDDDDD;
+                                border-radius: 10px;
+                                margin-top: 34px;
+                                margin-left: 35px;
+                            }
+                            
+                            .card-promo img {
+                                left: 0px;
+                                top: 0px;
+                                position: absolute;
+                                width: 190px;
+                                height: 196px;
+                                border-radius: 10px;
+                            }
+                            
+                            .card-promo:hover {
+                                transition: all 0.2s ease-out;
+                                box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+                            }
+                            
+                            .card-promo:hover {
+                                transform: scale(1.10);
+                            }
+                            
+                            .container {
+                                margin-top: 20px;
+                            }
+                            
+                            .card-promo h2 {
+                                position: absolute;
+                                width: 94px;
+                                height: 27px;
+                                left: 284px;
+                                top: 48px;
+                                font-family: Poppins;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 27px;
+                                /* identical to box height */
+                                color: #47A2FF;
+                            }
+                            
+                            .card-promo p {
+                                position: absolute;
+                                width: 73px;
+                                height: 21px;
+                                left: 294px;
+                                top: 27px;
+                                font-family: Poppins;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 21px;
+                                /* identical to box height */
+                                color: #47A2FF;
+                                text-decoration-line: line-through;
+                            }
+                            
+                            .card-promo button {
+                                position: absolute;
+                                width: 216px;
+                                height: 41px;
+                                left: 223px;
+                                top: 124px;
+                                border: none;
+                                background: #47A2FF;
+                                border-radius: 20px;
+                                color: white;
+                                font-weight: 500;
+                            }
+                            
+                            .card-promo button:hover {
+                                background: #007FFF;
+                            }
+                            
+                            .flex-container {
+                                text-align: center;
+                                font-size: 30px;
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                            }
+                            
+                            .text-promo-hp {
+                                visibility: hidden;
+                            }
+                            
+                            .bg-promo {
+                                visibility: hidden;
+                            }
+                            
+                            .promo-hp {
+                                display: none;
+                            }
+                            
+                            @media only screen and (max-width: 768px) {
+                                .promo-hp h1 {
+                                    color: #000000;
+                                }
+                                .promo-hp {
+                                    margin-left: 15px;
+                                }
+                                .promo-hp {
+                                    margin-top: 20px;
+                                    padding: 0;
+                                    height: 400px;
+                                    z-index: -1;
+                                    display: block;
+                                }
+                                .flex-container {
+                                    display: none;
+                                }
+                                .scrolling-wrapper-promo {
+                                    overflow-x: scroll;
+                                    overflow-y: hidden;
+                                    white-space: nowrap;
+                                    margin-left: -12px;
+                                    align-items: center;
+                                    top: 16px;
+                                    position: absolute;
+                                    left: 172px;
+                                    -ms-overflow-style: none;
+                                    /* IE and Edge */
+                                    scrollbar-width: none;
+                                    /* Firefox */
+                                    text-align: center;
+                                }
+                                .bg-promo {
+                                    align-items: center;
+                                    width: 90%;
+                                    position: absolute;
+                                    height: 354px;
+                                    margin-top: 20px;
+                                    background: #83BDE5;
+                                    border-radius: 13px;
+                                    overflow: auto;
+                                    background-image: url(img/banner\ promo100.png);
+                                    background-repeat: no-repeat;
+                                    background-size: 145px 310px;
+                                    background-position-y: center;
+                                    visibility: visible;
+                                }
+                                .square-promo {
+                                    margin: 20px;
+                                    margin-left: -4px;
+                                    width: 140px;
+                                    height: 291px;
+                                    background-color: #D2E8FF;
+                                    border-radius: 8px;
+                                    display: inline-block;
+                                }
+                                .square-promo img {
+                                    position: relative;
+                                    width: 140px;
+                                    height: 146px;
+                                    left: -13px;
+                                    top: -122px;
+                                    border-radius: 19px;
+                                }
+                                .square-promo h2 {
+                                    position: absolute;
+                                    margin-left: 12px;
+                                    top: 238px;
+                                    font-weight: 600;
+                                    color: #47A2FF;
+                                    font-size: 16px;
+                                }
+                                .square-promo p {
+                                    position: absolute;
+                                    margin-left: 12px;
+                                    top: 178px;
+                                    font-size: 12px;
+                                    font-weight: 600;
+                                    color: #000000;
+                                }
+                                .square-promo button {
+                                    position: relative;
+                                    width: 111px;
+                                    height: 29px;
+                                    margin-left: -142px;
+                                    margin-top: 250px;
+                                    background: #47A2FF;
+                                    color: white;
+                                    border: none;
+                                    border-radius: 14.5px;
+                                }
+                                .square-promo button:active {
+                                    background: #3298FF;
+                                }
+                                .scrolling-wrapper-promo::-webkit-scrollbar {
+                                    display: none;
+                                }
+                                .text-promo-hp .promo h1 {
+                                    color: #47A2FF;
+                                    font-size: 18px;
+                                }
+                                .text-promo {
+                                    display: none;
+                                }
+                                .text-promo-hp h1 {
+                                    position: absolute;
+                                    top: 0px;
+                                    left: 0px;
+                                    top: 0px;
+                                    font-size: 20px;
+                                }
+                                .text-promo-hp h2 {
+                                    position: absolute;
+                                    color: #47A2FF;
+                                    left: 85%;
+                                    top: 5px;
+                                    font-size: 14px;
+                                }
+                                .text-promo-hp {
+                                    width: 90%;
+                                    height: 50px;
+                                    margin-top: -20;
+                                    visibility: visible;
+                                    position: absolute;
+                                }
+                                .text-promo-hp a {
+                                    color: black;
+                                }
+                            }
+                            /* banner promo */
+                            
+                            .baner-promo {
+                                width: 1075px;
+                                height: 599px;
+                                margin-top: 30px;
+                                background-color: #0C9;
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                            }
+                            
+                            .text-produk {
+                                color: #47A2FF;
+                                width: 1175px;
+                                height: 30px;
+                                margin-top: 80px;
+                                margin-left: auto;
+                                margin-right: auto;
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                            
+                            .text-produk h1 {
+                                font-size: 32px;
+                            }
+                            
+                            .text-produk p {
+                                margin-top: 15px;
+                            }
+                            
+                            .text-produk a {
+                                color: unset;
+                            }
+                            
+                            .scrolling-wrapper-produk {
+                                overflow-x: scroll;
+                                overflow-y: hidden;
+                                width: 810px;
+                                white-space: nowrap;
+                                margin-left: 230px;
+                                align-items: center;
+                                margin-top: 60px;
+                                -ms-overflow-style: none;
+                                /* IE and Edge */
+                                scrollbar-width: none;
+                                /* Firefox */
+                                text-align: left;
+                            }
+                            /* Produk */
+                            
+                            .card-produk {
+                                width: 191px;
+                                height: 320px;
+                                display: inline-block;
+                                background: #D2E8FF;
+                                border-radius: 30px;
+                                margin: 20px;
+                            }
+                            
+                            .bg-produk {
+                                width: 1066px;
+                                height: 404px;
+                                display: block;
+                                margin-left: auto;
+                                margin-right: auto;
+                                background-image: url(img/banner\ promo100.png);
+                                background-repeat: no-repeat;
+                                background-size: 223px 424px;
+                                visibility: visible;
+                            }
+                            
+                            .card-produk h2 {
+                                position: relative;
+                                font-weight: 600;
+                                color: #47A2FF;
+                                font-size: 16px;
+                                top: 20px;
+                                left: 15px;
+                            }
+                            
+                            .card-produk p {
+                                position: relative;
+                                font-size: 12px;
+                                font-weight: 600;
+                                color: #000000;
+                                top: 15px;
+                                left: 15px;
+                            }
+                            
+                            .card-produk img {
+                                position: relative;
+                                width: 191px;
+                                height: 201px;
+                                border-radius: 19px;
+                            }
+                            
+                            .card-produk button {
+                                position: relative;
+                                width: 111px;
+                                height: 29px;
+                                top: 35px;
+                                background: #47A2FF;
+                                color: white;
+                                border: none;
+                                margin-left: 40px;
+                                border-radius: 14.5px;
+                            }
+                            
+                            .card-produk button:hover {
+                                background: #007FFF;
+                            }
+                            
+                            .img-baner {
+                                border: #007FFF;
+                                width: 95%;
+                                margin-right: auto;
+                                margin-left: auto;
+                                display: block;
+                                margin-top: 20px;
+                            }
+                            
+                            @media only screen and (max-width: 768px) {
+                                .baner-promo {
+                                    display: none;
+                                }
+                                .bg-produk {
+                                    display: none;
+                                }
+                                .text-produk {
+                                    display: none;
+                                }
+                                .payment {
+                                    display: none;
+                                }
+                                .service {
+                                    display: none;
+                                }
+                                .testimoni {
+                                    display: none;
+                                }
+                                .responsive {
+                                    width: 100%;
+                                    position: absolute;
+                                    height: auto;
+                                    margin-right: auto;
+                                    margin-left: auto;
+                                }
+                            }
+                            
+                            .service-hp {
+                                display: none;
+                            }
+                            
+                            .service {
+                                margin-left: auto;
+                                margin-right: auto;
+                                width: 1073.44px;
+                                height: 598.57px;
+                                margin-top: 190px;
+                            }
+                            
+                            .testimoni {
+                                width: 1076px;
+                                height: 600px;
+                                background: #007FFF;
+                                margin-left: auto;
+                                margin-right: auto;
+                                margin-top: 190px;
+                            }
+                            /* Slideshow container */
+                            
+                            .img-slider {
+                                position: relative;
+                                width: 1076px;
+                                height: 600px;
+                            }
+                            
+                            .img-slider .slider-container {
+                                position: absolute;
+                                width: 300%;
+                                top: 0;
+                                left: 0;
+                                overflow: hidden;
+                                animation: slider 26s infinite;
+                            }
+                            
+                            .img-slider .slider-container .slide {
+                                position: relative;
+                                width: 33.33333333%;
+                                height: 100%;
+                                float: left;
+                                overflow: hidden
+                            }
+                            
+                            .img-slider .slider-container .slide img {
+                                display: block;
+                                width: 100%;
+                                height: 100%
+                            }
+                            
+                            @keyframes slider {
+                                0%,
+                                25%,
+                                100% {
+                                    left: 0
+                                }
+                                30%,
+                                55% {
+                                    left: -100%
+                                }
+                                60%,
+                                85% {
+                                    left: -200%
+                                }
+                            }
+                            
+                            .newfooter {
+                                background-color: #73abfa;
+                                ;
+                                background-size: contain;
+                                background-attachment: fixed;
+                                text-align: center;
+                                padding: 1em;
+                                display: flex;
+                                flex-direction: column;
+                                margin-top: 100px;
+                            }
+                            
+                            .menufooter a {
+                                color: #ffffff;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 1rem;
+                                margin: 1em;
+                            }
+                            
+                            .menufooter a:hover {
+                                color: #f5d67c !important;
+                            }
+                            
+                            .socialfooter a {
+                                margin: 0.3em;
+                            }
+                            
+                            .socialfooter a img {
+                                width: 2.5vw;
+                                margin-top: 1em;
+                            }
+                            
+                            .menufooter {
+                                padding: 3vh;
+                            }
+                            
+                            .addressfooter {
+                                margin-top: 0px;
+                                font-size: 0.6em;
+                            }
+                            
+                            .socialfooter a span {
+                                display: flex;
+                            }
+                            
+                            .socialfooter a span {
+                                display: flex;
+                            }
+                            
+                            .socialfooter {
+                                display: flex;
+                                text-align: center;
+                                justify-content: center;
+                            }
+                            
+                            .socialfooter a {
+                                margin: 0.3em;
+                            }
+                            
+                            .socialfooter a img {
+                                width: 2.5vw;
+                                margin-top: 1em;
+                            }
+                            
+                            .socialfooter a img {
+                                width: 2em;
+                                margin-top: 0;
+                                margin-bottom: 1em;
+                            }
+                            
+                            .payment {
+                                margin-left: auto;
+                                margin-right: auto;
+                                margin-top: 20px;
+                            }
+                            
+                            @media only screen and (max-width: 768px) {
+                                .responsive {
+                                    display: block;
+                                }
+                                .payment-hp {
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    display: block;
+                                }
+                                .newfooter {
+                                    margin-top: 60px;
+                                    height: 400px;
+                                }
+                                .img-sliderku {
+                                    position: relative;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    width: 100%;
+                                    height: 200px;
+                                }
+                                .img-sliderku .sliderku-container {
+                                    position: absolute;
+                                    width: 300%;
+                                    top: 0;
+                                    left: 0;
+                                    overflow: hidden;
+                                    animation: sliderku 26s infinite;
+                                }
+                                .img-sliderku .sliderku-container .slide {
+                                    position: relative;
+                                    width: 33.33333333%;
+                                    height: 100%;
+                                    float: left;
+                                    overflow: hidden
+                                }
+                                .img-sliderku .sliderku-container .slide img {
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%
+                                }
+                                @keyframes sliderku {
+                                    0%,
+                                    25%,
+                                    100% {
+                                        left: 0
+                                    }
+                                    30%,
+                                    55% {
+                                        left: -100%
+                                    }
+                                    60%,
+                                    85% {
+                                        left: -200%
+                                    }
+                                }
+                                .scroll-hp {
+                                    font-family: Arial, Helvetica, sans-serif;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    width: 300px;
+                                    margin-top: 820px;
+                                    width: 100%;
+                                    display: block;
+                                    padding: 10px;
+                                }
+                                .scroll-hp h1 {
+                                    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                }
+                                #foo {
+                                    border: 0px;
+                                    outline: 0px;
+                                    background: white;
+                                    padding-left: 0px;
+                                    margin-left: -3px;
+                                    padding: 0px;
+                                    font-size: 18px;
+                                    height: 30px;
+                                }
+                            }
+                            
+                            .scroll {
+                                overflow-y: scroll;
+                                margin-top: 40px;
+                                width: 80%;
+                                height: 230px;
+                                font-weight: normal;
+                                margin-left: auto;
+                                margin-right: auto;
+                            }
+                            
+                            .topnav {
+                                overflow: hidden;
+                                background-color: rgb(255, 255, 255);
+                                display: none;
+                            }
+                            
+                            .topnav a {
+                                float: left;
+                                display: block;
+                                color: #000000;
+                                text-align: center;
+                                padding: 14px 16px;
+                                text-decoration: none;
+                                font-size: 17px;
+                            }
+                            
+                            .topnav a:hover {
+                                background-color: rgb(255, 255, 255);
+                                color: rgb(0, 0, 0);
+                            }
+                            
+                            .topnav a.active {
+                                background-color: #04AA6D;
+                                color: rgb(255, 255, 255);
+                            }
+                            
+                            .topnav img {
+                                margin-left: 38%;
+                                margin-top: -10px;
+                            }
+                            
+                            .topnav .icon {
+                                display: none;
+                            }
+                            
+                            @media screen and (max-width: 600px) {
+                                .topnav a:not(:first-child) {
+                                    display: none;
+                                }
+                                .topnav a.icon {
+                                    float: right;
+                                    display: block;
+                                }
+                                .topnav {
+                                    display: block;
+                                    position: sticky;
+                                }
+                            }
+                            
+                            @media screen and (max-width: 600px) {
+                                .topnav.responsive {
+                                    position: relative;
+                                }
+                                .topnav.responsive .icon {
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                }
+                                .topnav.responsive a {
+                                    float: none;
+                                    display: block;
+                                    text-align: left;
+                                }
+                                .topnav img {
+                                    width: 80px;
+                                }
+                            }
+                            
+                            .detailp {
+                                padding-left: 136px;
+                                display: flex;
+                                padding-top: 34px;
+                            }
+                            
+                            .detailp img {
+                                width: 30%;
+                            }
+                            
+                            .hargap {
+                                padding-left: 60px;
+                            }
+                            
+                            .hargap h1 {
+                                color: #47A2FF;
+                            }
+                            
+                            .beli {
+                                background: #0C9;
+                                width: 130px;
+                                height: 70px;
+                                border-radius: 20px;
+                                margin-left: 50px;
+                                color: white;
+                                padding: 10px;
+                                display: flex;
+                            }
+                            
+                            .beli img {
+                                width: 40%;
+                            }
+                            
+                            .beli h2 {
+                                margin-left: 15px;
+                                margin-top: 5px;
+                            }
+                            
+                            .detail-hp {
+                                display: none;
+                            }
+                            
+                            .desc {
+                                padding: 10px;
+                                margin-left: 129px;
+                                margin-top: 5px;
+                            }
+                            
+                            @media screen and (max-width: 600px) {
+                                .detailp {
+                                    display: none;
+                                }
+                                .detail-hp {
+                                    width: 100%;
+                                    padding: 10px;
+                                    display: block;
+                                    margin-top: 20px;
+                                }
+                                .harga-hp h1 {
+                                    color: #47A2FF;
+                                }
+                                .harga-hp {
+                                    margin-top: 12px;
+                                    margin-left: 10px;
+                                }
+                                .detail-hp img {
+                                    width: 80%;
+                                    margin-left: 10%;
+                                }
+                                .detail-hp button {
+                                    width: 50%;
+                                    padding-left: 20px;
+                                    margin-left: 25%;
+                                    border-radius: 10px;
+                                    margin-top: 10px;
+                                    color: white;
+                                    font-weight: 400;
+                                    font-size: 20px;
+                                    background-color: rgb(94, 201, 80);
+                                    border-color: rgb(94, 201, 80);
+                                    height: 55px;
+                                }
+                                .detail-hp button .fa-whatsapp {
+                                    margin-left: -20px;
+                                    margin-top: 5px;
+                                    position: absolute;
+                                }
+                                .desc {
+                                    padding: 10px;
+                                    margin-left: 10px;
+                                    margin-top: 5px;
+                                }
+                                .container {
+                                    margin-top: 20px;
+                                }
+                            }
+                            
+                            select {
+                                width: 100%;
+                                height: 40px;
+                                background: #F5F5F5;
+                                border: none;
+                                padding-left: 10px;
+                                font-size: 16px;
+                            }
+                            
+                            .center {
+                                text-align: center;
+                                margin-top: 30px;
+                                margin-right: auto;
+                                margin-left: auto;
+                            }
+                            
+                            .pagination {
+                                display: inline-block;
+                            }
+                            
+                            .pagination a {
+                                color: black;
+                                float: left;
+                                padding: 8px 16px;
+                                text-decoration: none;
+                                transition: background-color .3s;
+                                border: 1px solid #ddd;
+                                margin: 0 4px;
+                            }
+                            
+                            .pagination a.active {
+                                background-color: #4CAF50;
+                                color: white;
+                                border: 1px solid #4CAF50;
+                            }
+                            
+                            .pagination a:hover:not(.active) {
+                                background-color: #ddd;
+                            }
+                            
+                            .fling-minislide {
+                                width: 100%;
+                                height: 300px;
+                                overflow: hidden;
+                                position: relative;
+                            }
+                            
+                            .fling-minislide img {
+                                position: absolute;
+                                animation: fling-minislide 40s infinite;
+                                opacity: 0;
+                                width: 100%;
+                                height: auto;
+                            }
+                            
+                            @keyframes fling-minislide {
+                                25% {
+                                    opacity: 1;
+                                }
+                                40% {
+                                    opacity: 0;
+                                }
+                            }
+                            
+                            .fling-minislide img:nth-child(4) {
+                                animation-delay: 0s;
+                            }
+                            
+                            .fling-minislide img:nth-child(3) {
+                                animation-delay: 15s;
+                            }
+                            
+                            .fling-minislide img:nth-child(2) {
+                                animation-delay: 10s;
+                            }
+                            
+                            .fling-minislide img:nth-child(1) {
+                                animation-delay: 15s;
+                            }

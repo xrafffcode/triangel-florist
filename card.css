@@ -1,0 +1,136 @@
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.boxes {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 -10px;
+}
+
+.option {
+    border-style: solid;
+    color: black;
+}
+
+.boxes li {
+    width: 25%;
+    padding: 0 5px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.boxes li img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.boxes li button {
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(94, 201, 80);
+    border-color: rgb(94, 201, 80);
+    height: 35px;
+    margin-top: 5px;
+}
+
+.pilter a {
+    color: #47A2FF;
+}
+
+.link .fa-whatsapp {
+    margin-left: -20px;
+    margin-top: 3px;
+    position: absolute;
+}
+
+.boxes li p {
+    margin-top: 10px;
+}
+
+.boxes li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: white;
+    color: #000;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.boxes li a:active {
+    border-color: #47A2FF;
+    border-style: solid;
+}
+
+.boxes .details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.boxes .details span {
+    font-weight: 500;
+    color: #47A2FF;
+}
+
+.boxes .details .length {
+    margin-right: 10px;
+}
+
+.boxes .details span:before {
+    padding-right: 3px;
+}
+
+.link {
+    padding: unset;
+}
+
+.categoryku {
+    padding-left: 160px;
+}
+
+@media only screen and (max-width: 768px) {
+    .boxes li {
+        width: 50%;
+        padding: 0 2.5px;
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+    .categoryku {
+        padding-left: 2%;
+        margin-top: -30px;
+    }
+    .boxes li p {
+        margin-top: 10px;
+    }
+    .boxes li button {
+        width: 100%;
+        border-radius: 5px;
+        color: white;
+        font-weight: 400;
+        background-color: rgb(94, 201, 80);
+        border-color: rgb(94, 201, 80);
+        height: 35px;
+        padding-left: 20px;
+    }
+    .link .fa-whatsapp {
+        margin-left: -22px;
+        margin-top: -1px;
+        position: absolute;
+        font-size: 20px;
+    }
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin-top: 0px;
+    }
+}
